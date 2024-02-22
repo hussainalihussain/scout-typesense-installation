@@ -1,3 +1,26 @@
+## Table of Contents
+
+1. [How to use Scout Typesense in Windows OS](#how-to-use-scout-typesense-in-windows-os)
+2. [Step#1 - Install Scout Package](#step1---install-scout-package)
+3. [Step#2 - Publish config file](#step2---publish-config-file)
+4. [Step#3 - Use Searchable in Model](#step3---use-searchable-in-model)
+5. [Step#4 - Downloading Linux in WSL](#step4---downloading-linux-in-wsl)
+   - [Step#4.1 - See the list of Linux Distributions](#step41---see-the-list-of-linux-distributions)
+   - [Step#4.2 - Install Linux Distribution](#step42---install-linux-distribution)
+   - [Step#4.3 - See the running Distribution](#step43---see-the-running-distribution)
+   - [Step#4.4 - Open Linux](#step44---open-linux)
+
+   ### Step#4.1 - .
+6. [Step#5 - Download Typesense](#step5---download-typesense)
+7. [Step#6 - Start Typesense](#step6---start-typesense)
+8. [Step#7 - Test Typesense](#step7---test-typesense)
+9. [Step#8 - Configuration of Typesense Server](#step8---configuration-of-typesense-server)
+10. [Step#9 - Install SDK (Package) for Typesense in Laravel](#step9---install-sdk-package-for-typesense-in-laravel)
+11. [Step#10 - Update .env](#step10---update-env)
+12. [Step#11 - Prepare Data for Storage in Typesense](#step11---prepare-data-for-storage-in-typesense)
+13. [Step#12 - For Soft deletable Model](#step12---for-soft-deletable-model)
+14. [Step#13 - Test Typesense Searching](#step13---test-typesense-searching)
+
 # How to use Scout Typesense in Windows OS
 
 `Scout` is the laravel package that helps create server for `Full Text Searching` and `Typesense` is the Open Source Engine, fast, support keyword search, semantic search, geo search, and vector search.
@@ -25,19 +48,18 @@ class Post extends Model
 }
 ```
 
-## Step#4 - Downloading and installing Typesense
+## Step#4 - Downloading Linux in WSL
 Typesense as a `Self Hosting` (Hosted) in windows is a little harder.
 
 
-### Step-I - Install WSL/Linux
 See the [full documentation](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-#### 1
+### Step#4.1 - See the list of Linux Distributions
 Type the following to see the list of available Linux distributions.
 
 > wsl --install
 
-#### 2
+### Step#4.2 - Install Linux Distribution
 Now Install one of you favorite distribution. For example if i want to install `Ubuntu-20.04` then I need:
 
 > wsl --install -d Ubuntu-20.04
@@ -45,11 +67,11 @@ Now Install one of you favorite distribution. For example if i want to install `
 *Note:*
 This may ask to setup (root) user with password.
 
-#### 3
+### Step#4.3 - See the running Distribution
 After installation you can check which version of Linux Distro. is running by:
 > wsl -l -v
 
-#### 4 - Open Linux
+### Step#4.4 - Open Linux
 Just type `Ubuntu` in the Search of Start Menu and you will see (in my case) `Ubuntu 20.04.6 LTS`, just open it and this will open `powershell`
 
 ## Step#5 - Download Typesense
